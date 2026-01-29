@@ -16,9 +16,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
           pip install build
-      - name: Python build
-        run: |
-          python -m build
       - name: upload artifact
         uses: actions/upload-artifact@v6.0.0
         with:
